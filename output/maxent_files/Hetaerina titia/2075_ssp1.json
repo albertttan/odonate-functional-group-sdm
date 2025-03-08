@@ -1,0 +1,10 @@
+{
+  "species": "Hetaerina titia",
+  "year": "2075",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.0333,
+  "range_size": 3058451,
+  "range_centroid_x": -88.4145,
+  "range_centroid_y": 35.7101,
+  "eval_runtime": 812.1496
+}

@@ -1,0 +1,19 @@
+{
+  "species": "Argia tibialis",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.047,
+  "range_size": 3835921,
+  "range_centroid_x": -87.5803,
+  "range_centroid_y": 36.7446,
+  "eval_runtime": 1158.9289,
+  "eval_training_auc": 0.9155,
+  "eval_testing_auc": 0.9755,
+  "output_threshold": 0.2759,
+  "Bioclim10": 36.6359,
+  "Bioclim12": 25.9414,
+  "Bioclim4": 23.7907,
+  "Bioclim7": 9.5242,
+  "PFT7": 0.4375,
+  "slope": 3.6702
+}

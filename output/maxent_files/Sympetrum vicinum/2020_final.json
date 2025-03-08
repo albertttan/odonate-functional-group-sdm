@@ -1,0 +1,22 @@
+{
+  "species": "Sympetrum vicinum",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0749,
+  "range_size": 3407206,
+  "range_centroid_x": -86.0049,
+  "range_centroid_y": 41.3053,
+  "eval_runtime": 1757.3211,
+  "eval_training_auc": 0.8825,
+  "eval_testing_auc": 0.9679,
+  "output_threshold": 0.4014,
+  "Bioclim1": 20.6613,
+  "Bioclim10": 11.2653,
+  "Bioclim11": 15.008,
+  "Bioclim12": 14.729,
+  "Bioclim4": 11.3445,
+  "Bioclim7": 17.1984,
+  "PFT14": 0.1531,
+  "PFT2": 4.1348,
+  "slope": 5.5056
+}

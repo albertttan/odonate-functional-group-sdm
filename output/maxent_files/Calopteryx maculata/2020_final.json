@@ -1,0 +1,20 @@
+{
+  "species": "Calopteryx maculata",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0715,
+  "range_size": 5399291,
+  "range_centroid_x": -85.9509,
+  "range_centroid_y": 39.2216,
+  "eval_runtime": 1209.5081,
+  "eval_training_auc": 0.8476,
+  "eval_testing_auc": 0.9648,
+  "output_threshold": 0.2648,
+  "Bioclim10": 17.1967,
+  "Bioclim12": 39.6759,
+  "Bioclim4": 15.5333,
+  "PFT10": 3.1172,
+  "PFT2": 11.2959,
+  "PFT7": 5.6846,
+  "slope": 7.4965
+}

@@ -1,0 +1,10 @@
+{
+  "species": "Argia sedula",
+  "year": "2100",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.0742,
+  "range_size": 6482264,
+  "range_centroid_x": -95.9941,
+  "range_centroid_y": 35.5471,
+  "eval_runtime": 649.5646
+}

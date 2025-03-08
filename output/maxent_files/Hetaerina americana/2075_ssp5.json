@@ -1,0 +1,10 @@
+{
+  "species": "Hetaerina americana",
+  "year": "2075",
+  "ssp": "ssp5",
+  "range_mean_suitability": 0.1209,
+  "range_size": 4948842,
+  "range_centroid_x": -95.0204,
+  "range_centroid_y": 38.7833,
+  "eval_runtime": 868.2815
+}

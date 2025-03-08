@@ -1,0 +1,21 @@
+{
+  "species": "Hetaerina titia",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0362,
+  "range_size": 3359150,
+  "range_centroid_x": -88.5551,
+  "range_centroid_y": 35.7495,
+  "eval_runtime": 1564.5853,
+  "eval_training_auc": 0.9618,
+  "eval_testing_auc": 0.9812,
+  "output_threshold": 0.1728,
+  "Bioclim1": 5.1344,
+  "Bioclim10": 22.7851,
+  "Bioclim12": 5.0256,
+  "Bioclim4": 22.5293,
+  "Bioclim7": 40.214,
+  "PFT31": 0.9089,
+  "PFT7": 1.0585,
+  "slope": 2.3442
+}

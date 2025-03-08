@@ -1,0 +1,20 @@
+{
+  "species": "Libellula pulchella",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.1106,
+  "range_size": 3856655,
+  "range_centroid_x": -88.7714,
+  "range_centroid_y": 41.2113,
+  "eval_runtime": 1579.6974,
+  "eval_training_auc": 0.8268,
+  "eval_testing_auc": 0.9552,
+  "output_threshold": 0.447,
+  "Bioclim1": 36.3199,
+  "Bioclim12": 7.5684,
+  "Bioclim4": 17.7433,
+  "PFT12": 6.2227,
+  "PFT14": 0.9942,
+  "PFT2": 10.8214,
+  "Population": 20.3301
+}

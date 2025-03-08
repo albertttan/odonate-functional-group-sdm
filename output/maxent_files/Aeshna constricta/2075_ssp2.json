@@ -1,0 +1,10 @@
+{
+  "species": "Aeshna constricta",
+  "year": "2075",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.0575,
+  "range_size": 5568443,
+  "range_centroid_x": -92.0832,
+  "range_centroid_y": 47.8475,
+  "eval_runtime": 402.4312
+}

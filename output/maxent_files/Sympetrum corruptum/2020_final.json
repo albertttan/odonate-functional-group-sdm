@@ -1,0 +1,20 @@
+{
+  "species": "Sympetrum corruptum",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0976,
+  "range_size": 4129925,
+  "range_centroid_x": -103.134,
+  "range_centroid_y": 35.5814,
+  "eval_runtime": 1270.8904,
+  "eval_training_auc": 0.8823,
+  "eval_testing_auc": 0.9229,
+  "output_threshold": 0.3828,
+  "Bioclim11": 45.6294,
+  "Bioclim12": 9.6802,
+  "Bioclim4": 21.7536,
+  "Bioclim7": 9.441,
+  "PFT12": 4.3517,
+  "PFT2": 1.8235,
+  "Population": 7.3206
+}

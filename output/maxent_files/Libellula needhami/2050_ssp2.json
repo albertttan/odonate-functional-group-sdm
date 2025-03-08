@@ -1,0 +1,10 @@
+{
+  "species": "Libellula needhami",
+  "year": "2050",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.0241,
+  "range_size": 1516363,
+  "range_centroid_x": -87.5176,
+  "range_centroid_y": 32.2226,
+  "eval_runtime": 889.7508
+}

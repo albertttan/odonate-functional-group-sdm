@@ -1,0 +1,10 @@
+{
+  "species": "Calopteryx angustipennis",
+  "year": "2075",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.0229,
+  "range_size": 890857,
+  "range_centroid_x": -101.0153,
+  "range_centroid_y": 39.6268,
+  "eval_runtime": 144.5747
+}

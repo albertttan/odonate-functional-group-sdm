@@ -1,0 +1,22 @@
+{
+  "species": "Libellula incesta",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0607,
+  "range_size": 4063511,
+  "range_centroid_x": -85.1709,
+  "range_centroid_y": 37.4971,
+  "eval_runtime": 1896.392,
+  "eval_training_auc": 0.8269,
+  "eval_testing_auc": 0.9705,
+  "output_threshold": 0.397,
+  "Bioclim10": 7.0461,
+  "Bioclim11": 0.0109,
+  "Bioclim12": 46.0392,
+  "Bioclim4": 17.1846,
+  "Bioclim7": 9.0075,
+  "PFT14": 2.4719,
+  "PFT2": 9.2638,
+  "PFT7": 3.9494,
+  "slope": 5.0264
+}

@@ -1,0 +1,10 @@
+{
+  "species": "Sympetrum pallipes",
+  "year": "2100",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.0445,
+  "range_size": 2663565,
+  "range_centroid_x": -115.4407,
+  "range_centroid_y": 45.3575,
+  "eval_runtime": 607.1757
+}

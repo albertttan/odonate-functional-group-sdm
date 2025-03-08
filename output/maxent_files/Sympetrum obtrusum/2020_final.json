@@ -1,0 +1,22 @@
+{
+  "species": "Sympetrum obtrusum",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0602,
+  "range_size": 3318459,
+  "range_centroid_x": -90.4321,
+  "range_centroid_y": 44.8601,
+  "eval_runtime": 2480.2757,
+  "eval_training_auc": 0.9433,
+  "eval_testing_auc": 0.9647,
+  "output_threshold": 0.2914,
+  "Bioclim1": 59.7897,
+  "Bioclim10": 8.6726,
+  "Bioclim11": 3.3761,
+  "Bioclim12": 7.3393,
+  "Bioclim4": 7.7422,
+  "PFT10": 2.9029,
+  "PFT2": 3.0416,
+  "Population": 3.6366,
+  "slope": 3.4991
+}

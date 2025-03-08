@@ -1,0 +1,10 @@
+{
+  "species": "Libellula pulchella",
+  "year": "2100",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.1128,
+  "range_size": 3539593,
+  "range_centroid_x": -88.3205,
+  "range_centroid_y": 41.948,
+  "eval_runtime": 858.6789
+}

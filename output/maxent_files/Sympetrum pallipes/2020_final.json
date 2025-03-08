@@ -1,0 +1,20 @@
+{
+  "species": "Sympetrum pallipes",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0455,
+  "range_size": 2972906,
+  "range_centroid_x": -113.2366,
+  "range_centroid_y": 43.2854,
+  "eval_runtime": 1307.7021,
+  "eval_training_auc": 0.9554,
+  "eval_testing_auc": 0.9748,
+  "output_threshold": 0.275,
+  "Bioclim1": 31.8634,
+  "Bioclim11": 10.6344,
+  "Bioclim4": 39.2842,
+  "Bioclim7": 8.7694,
+  "PFT12": 3.1246,
+  "PFT2": 1.4187,
+  "Population": 4.9054
+}

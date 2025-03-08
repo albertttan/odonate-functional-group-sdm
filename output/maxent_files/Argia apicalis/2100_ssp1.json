@@ -1,0 +1,10 @@
+{
+  "species": "Argia apicalis",
+  "year": "2100",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.0851,
+  "range_size": 4841641,
+  "range_centroid_x": -89.6884,
+  "range_centroid_y": 37.5751,
+  "eval_runtime": 1148.0881
+}

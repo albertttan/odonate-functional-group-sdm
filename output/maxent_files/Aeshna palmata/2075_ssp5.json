@@ -1,0 +1,10 @@
+{
+  "species": "Aeshna palmata",
+  "year": "2075",
+  "ssp": "ssp5",
+  "range_mean_suitability": 0.0294,
+  "range_size": 2057980,
+  "range_centroid_x": -132.8657,
+  "range_centroid_y": 52.636,
+  "eval_runtime": 381.6151
+}

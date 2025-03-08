@@ -1,0 +1,10 @@
+{
+  "species": "Aeshna canadensis",
+  "year": "2100",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.0822,
+  "range_size": 6573226,
+  "range_centroid_x": -99.4295,
+  "range_centroid_y": 49.2865,
+  "eval_runtime": 670.3688
+}

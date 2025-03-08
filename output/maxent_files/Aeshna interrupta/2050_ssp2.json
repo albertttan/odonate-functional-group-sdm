@@ -1,0 +1,10 @@
+{
+  "species": "Aeshna interrupta",
+  "year": "2050",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.064,
+  "range_size": 5206729,
+  "range_centroid_x": -101.2232,
+  "range_centroid_y": 47.4056,
+  "eval_runtime": 933.8526
+}

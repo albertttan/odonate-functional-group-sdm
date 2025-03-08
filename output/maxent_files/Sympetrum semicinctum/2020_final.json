@@ -1,0 +1,19 @@
+{
+  "species": "Sympetrum semicinctum",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0751,
+  "range_size": 7322776,
+  "range_centroid_x": -97.5113,
+  "range_centroid_y": 42.7886,
+  "eval_runtime": 1372.4477,
+  "eval_training_auc": 0.9187,
+  "eval_testing_auc": 0.9571,
+  "output_threshold": 0.1734,
+  "Bioclim1": 62.1845,
+  "Bioclim10": 7.4003,
+  "Bioclim4": 10.8093,
+  "PFT2": 1.9012,
+  "Population": 13.8393,
+  "Rainfed": 3.8653
+}

@@ -1,0 +1,10 @@
+{
+  "species": "Hetaerina vulnerata",
+  "year": "2100",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.0021,
+  "range_size": 41327,
+  "range_centroid_x": -111.1233,
+  "range_centroid_y": 37.5139,
+  "eval_runtime": 511.6748
+}

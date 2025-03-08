@@ -1,0 +1,10 @@
+{
+  "species": "Calopteryx dimidiata",
+  "year": "2075",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.0126,
+  "range_size": 1322493,
+  "range_centroid_x": -83.6784,
+  "range_centroid_y": 35.2058,
+  "eval_runtime": 1296.5037
+}

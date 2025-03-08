@@ -1,0 +1,19 @@
+{
+  "species": "Plathemis subornata",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0204,
+  "range_size": 3316618,
+  "range_centroid_x": -107.9742,
+  "range_centroid_y": 37.4034,
+  "eval_runtime": 980.088,
+  "eval_training_auc": 0.9809,
+  "eval_testing_auc": 0.9796,
+  "output_threshold": 0.0643,
+  "Bioclim10": 17.9044,
+  "Bioclim11": 23.9094,
+  "Bioclim12": 23.5069,
+  "Bioclim4": 21.6368,
+  "Bioclim7": 9.4595,
+  "PFT13": 3.583
+}

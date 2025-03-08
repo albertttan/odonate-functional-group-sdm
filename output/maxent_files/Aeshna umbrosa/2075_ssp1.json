@@ -1,0 +1,10 @@
+{
+  "species": "Aeshna umbrosa",
+  "year": "2075",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.0747,
+  "range_size": 3719864,
+  "range_centroid_x": -91.8045,
+  "range_centroid_y": 44.2325,
+  "eval_runtime": 919.3682
+}

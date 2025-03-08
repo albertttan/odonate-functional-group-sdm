@@ -1,0 +1,10 @@
+{
+  "species": "Plathemis lydia",
+  "year": "2050",
+  "ssp": "ssp5",
+  "range_mean_suitability": 0.1234,
+  "range_size": 5322728,
+  "range_centroid_x": -87.604,
+  "range_centroid_y": 39.1621,
+  "eval_runtime": 1122.7779
+}

@@ -1,0 +1,10 @@
+{
+  "species": "Argia moesta",
+  "year": "2050",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.1024,
+  "range_size": 7018716,
+  "range_centroid_x": -91.1903,
+  "range_centroid_y": 37.8549,
+  "eval_runtime": 1200.0463
+}

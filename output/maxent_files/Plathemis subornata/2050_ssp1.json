@@ -1,0 +1,10 @@
+{
+  "species": "Plathemis subornata",
+  "year": "2050",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.0212,
+  "range_size": 3107582,
+  "range_centroid_x": -108.2006,
+  "range_centroid_y": 37.6284,
+  "eval_runtime": 356.8305
+}

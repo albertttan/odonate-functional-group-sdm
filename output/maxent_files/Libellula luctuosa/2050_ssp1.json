@@ -1,0 +1,10 @@
+{
+  "species": "Libellula luctuosa",
+  "year": "2050",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.1014,
+  "range_size": 6002853,
+  "range_centroid_x": -90.3759,
+  "range_centroid_y": 38.4983,
+  "eval_runtime": 1884.7677
+}

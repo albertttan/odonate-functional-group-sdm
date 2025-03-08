@@ -1,0 +1,10 @@
+{
+  "species": "Libellula incesta",
+  "year": "2050",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.0618,
+  "range_size": 4130062,
+  "range_centroid_x": -85.1611,
+  "range_centroid_y": 37.5716,
+  "eval_runtime": 1231.2578
+}

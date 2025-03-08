@@ -1,0 +1,10 @@
+{
+  "species": "Calopteryx aequabilis",
+  "year": "2050",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.0548,
+  "range_size": 3914381,
+  "range_centroid_x": -90.2076,
+  "range_centroid_y": 45.3742,
+  "eval_runtime": 838.7913
+}

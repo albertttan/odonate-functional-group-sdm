@@ -1,0 +1,10 @@
+{
+  "species": "Libellula vibrans",
+  "year": "2050",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.0458,
+  "range_size": 3474698,
+  "range_centroid_x": -86.8027,
+  "range_centroid_y": 35.9156,
+  "eval_runtime": 800.0404
+}

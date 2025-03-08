@@ -1,0 +1,10 @@
+{
+  "species": "Argia fumipennis",
+  "year": "2050",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.085,
+  "range_size": 4145555,
+  "range_centroid_x": -85.3865,
+  "range_centroid_y": 38.8458,
+  "eval_runtime": 773.6632
+}

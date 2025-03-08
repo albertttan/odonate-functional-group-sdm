@@ -1,0 +1,10 @@
+{
+  "species": "Calopteryx amata",
+  "year": "2100",
+  "ssp": "ssp2",
+  "range_mean_suitability": 0.026,
+  "range_size": 1248635,
+  "range_centroid_x": -91.8846,
+  "range_centroid_y": 50.8173,
+  "eval_runtime": 220.8089
+}

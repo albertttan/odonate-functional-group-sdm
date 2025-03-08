@@ -1,0 +1,18 @@
+{
+  "species": "Aeshna palmata",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0493,
+  "range_size": 3972087,
+  "range_centroid_x": -116.2794,
+  "range_centroid_y": 45.0322,
+  "eval_runtime": 861.5355,
+  "eval_training_auc": 0.9619,
+  "eval_testing_auc": 0.9764,
+  "output_threshold": 0.2214,
+  "Bioclim1": 33.7536,
+  "Bioclim11": 17.7026,
+  "Bioclim4": 34.6197,
+  "Bioclim7": 9.4686,
+  "Population": 4.4555
+}

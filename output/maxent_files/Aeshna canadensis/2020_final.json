@@ -1,0 +1,20 @@
+{
+  "species": "Aeshna canadensis",
+  "year": "2020",
+  "ssp": null,
+  "range_mean_suitability": 0.0493,
+  "range_size": 3758093,
+  "range_centroid_x": -91.7926,
+  "range_centroid_y": 45.8704,
+  "eval_runtime": 1227.7079,
+  "eval_training_auc": 0.9601,
+  "eval_testing_auc": 0.9749,
+  "output_threshold": 0.1941,
+  "Bioclim1": 73.2349,
+  "Bioclim11": 7.2808,
+  "Bioclim4": 1.2791,
+  "PFT13": 6.5757,
+  "PFT14": 5.559,
+  "Rainfed": 2.5154,
+  "slope": 3.5552
+}

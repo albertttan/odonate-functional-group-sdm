@@ -1,0 +1,10 @@
+{
+  "species": "Calopteryx maculata",
+  "year": "2075",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.071,
+  "range_size": 5331033,
+  "range_centroid_x": -85.9384,
+  "range_centroid_y": 39.4945,
+  "eval_runtime": 707.7202
+}

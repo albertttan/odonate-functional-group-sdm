@@ -1,0 +1,10 @@
+{
+  "species": "Argia tibialis",
+  "year": "2075",
+  "ssp": "ssp1",
+  "range_mean_suitability": 0.044,
+  "range_size": 3724337,
+  "range_centroid_x": -86.5448,
+  "range_centroid_y": 37.281,
+  "eval_runtime": 675.0014
+}
