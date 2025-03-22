@@ -11,7 +11,7 @@ library(emmeans)
 library(tweedie)
 library(DHARMa)
 
-data <- read.csv("results_processed.csv")
+data <- read.csv("result_analysis/results_processed.csv")
 data$distance_adjusted <- ifelse(data$distance == 0, 0.001, data$distance)
 data$distance_binary <- ifelse(data$distance == 0, 0, 1)
 data$distance_scaled <- scale(data$distance)
@@ -119,3 +119,4 @@ vif(model_distance, type="predictor")
 
 # Integrated interpretations: huge changes in range size, small changes in habitat suitability
 # Species spreading out to pockets
+
