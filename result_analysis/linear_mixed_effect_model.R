@@ -18,6 +18,7 @@ data <- read.csv("result_analysis/results_processed.csv")
 data$distance_adjusted <- ifelse(data$distance == 0, 0.001, data$distance)
 data$distance_binary <- ifelse(data$distance == 0, 0, 1)
 data$distance_scaled <- scale(data$distance)
+# @ Nathalie: the rows above are not necessary anymore, right?
 data_nonzero <- data[data$distance > 0,]
 # data$year <- as.factor(data$year) if `year` is treated as the factor, we get rank deficiency
 
@@ -264,13 +265,15 @@ print(p2_distance)
 
 # Integrated interpretations: huge changes in range size, small changes in habitat suitability
 # Species spreading out to pockets
+# @ Nathalie: should we show some example output distribution maps as detailed examples?
 
 ### Permutation Importance Analysis ----
 # Define variables to exclude
 exclude_vars <- c("species", "year", "ssp", "range_mean_suitability", 
                   "range_size", "range_centroid_x", "range_centroid_y",
                   "eval_runtime", "eval_training_auc", "eval_testing_auc",
-                  "output_threshold", "genus", "distance")
+                  "output_threshold", "genus", "distance", 
+                  "distance_adjusted", "distance_binary", "distance_scaled")  # Excluded the new distance variables
 
 # Get environmental predictor variables
 env_vars <- names(data)[!names(data) %in% exclude_vars]
@@ -306,6 +309,7 @@ importance_long <- reshape2::melt(env_data,
                                  value.name = "importance")
 
 # Create a summary data frame with statistical information
+# @ Nathalie: N/A values in importance_long where index ends with 1 indicate that the variable is unused (PI=0). Has this been considered?
 importance_summary <- data.frame(
     variable = levels(importance_long$env_var),
     mean = tapply(importance_long$importance, importance_long$env_var, mean, na.rm = TRUE),
@@ -331,5 +335,4 @@ print(p_importance)
 # Print summary statistics
 print("Summary of permutation importance:")
 print(importance_summary[order(-importance_summary$mean), ])
-
 
