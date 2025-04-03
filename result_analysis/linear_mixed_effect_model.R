@@ -19,6 +19,7 @@ data$distance_adjusted <- ifelse(data$distance == 0, 0.001, data$distance)
 data$distance_binary <- ifelse(data$distance == 0, 0, 1)
 data$distance_scaled <- scale(data$distance)
 # @ Nathalie: the rows above are not necessary anymore, right?
+# You can remove them, but you will need to update the code downstream that removes those columns
 data_nonzero <- data[data$distance > 0,]
 # data$year <- as.factor(data$year) if `year` is treated as the factor, we get rank deficiency
 
@@ -42,6 +43,21 @@ print(model_summary)
 emmeans_genus <- emmeans(model_suitability, ~ genus)
 print("Marginal Means for each Genus (averaged over SSP):")
 print(emmeans_genus)
+
+# Format emmeans output as a clean data frame
+emmeans_df <- as.data.frame(emmeans_genus)
+print("Marginal Means:")
+print(emmeans_df)
+
+# How to interpret the emmeans output:
+# - genus: The taxonomic genus being analyzed
+# - emmean: The estimated marginal mean (average value) for each genus, 
+#   controlling for other variables in the model (year and ssp)
+# - SE: Standard error of the mean, indicating the precision of the estimate
+#   (smaller SE = more precise estimate)
+# - df: Degrees of freedom for the t-test used to calculate confidence intervals
+# - lower.CL and upper.CL: The 95% confidence interval for the mean
+#   (if the intervals overlap between genera, they are not significantly different)
 
 # Marginal means plot
 p0 <- ggplot(as.data.frame(emmeans_genus), 
@@ -112,6 +128,11 @@ print(model_summary_size)
 emmeans_genus_size <- emmeans(model_size, ~ genus)
 print("Marginal Means for each Genus (Range Size, averaged over SSP):")
 print(emmeans_genus_size)
+
+# Format emmeans output as a clean data frame for range size
+emmeans_size_df <- as.data.frame(emmeans_genus_size)
+print("Marginal Means (Range Size):")
+print(emmeans_size_df)
 
 # Marginal means plot
 p0_size <- ggplot(as.data.frame(emmeans_genus_size), 
@@ -208,6 +229,11 @@ emmeans_genus_distance <- emmeans(model_distance_log, ~ genus)
 print("Marginal Means for each Genus (Distance, averaged over SSP):")
 print(emmeans_genus_distance)
 
+# Format emmeans output as a clean data frame for distance
+emmeans_distance_df <- as.data.frame(emmeans_genus_distance)
+print("Marginal Means (Distance):")
+print(emmeans_distance_df)
+
 # Marginal means plot (back-transformed to original scale)
 p0_distance <- ggplot(as.data.frame(emmeans_genus_distance), 
        aes(x = genus, y = exp(emmean))) +
@@ -266,6 +292,7 @@ print(p2_distance)
 # Integrated interpretations: huge changes in range size, small changes in habitat suitability
 # Species spreading out to pockets
 # @ Nathalie: should we show some example output distribution maps as detailed examples?
+# - Yes! That should be a primary figure of your paper
 
 ### Permutation Importance Analysis ----
 # Define variables to exclude
