@@ -1,14 +1,37 @@
 library(terra)
 library(usdm)
 library(jsonlite)
+source("functions.R")  # For the function "data_rename()"
 
-bioclim_data <- rast("data/climate/2020.tif") [[c(1, 4, 7, 10, 11, 12)]]
-topography_data_1 <- rast("data/topography/slope.tif")
-topography_data_2 <- rast("data/topography/roughness.tif")
-population_data <- rast("data/population/2020.tif")
-landuse_data <- rast("data/landuse/2020.tif")[[c(2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)]]
-environment_data <- c(bioclim_data, topography_data_1, population_data, landuse_data)
-vif_result <- vif(environment_data)
-print(vif_result)
-save(vif_result, file="output/multicollinearity/multicollinearity_selected.Rdata")
-write_json(vif_result$Variables, path="output/multicollinearity/multicollinearity.json", pretty=TRUE)
+
+## Load data
+
+selected_bioclim_vars <- c(1, 4, 7, 10, 11, 12)
+selected_landuse_vars <- c(2:3, 5:19)
+
+original_data <- data_rename(c(
+    rast("data/climate/baseline.tif"),
+    rast("data/landuse/baseline.tif"),
+    rast("data/population/baseline.tif"),
+    rast("data/topography/slope.tif"),
+    rast("data/topography/roughness.tif")
+))
+
+selected_data <- data_rename(c(
+    rast("data/climate/baseline.tif")[[selected_bioclim_vars]],
+    rast("data/landuse/baseline.tif")[[selected_landuse_vars]],
+    rast("data/population/baseline.tif"),
+    rast("data/topography/slope.tif")
+))
+
+
+## Run VIF analysis
+
+original_vif <- vif(original_data)
+selected_vif <- vif(selected_data)
+
+
+# Save results
+
+save(original_vif, selected_vif, file="output/multicollinearity/multicollinearity.Rdata")
+write_json(selected_vif$Variables, path="output/multicollinearity/selected_vars.json", pretty=TRUE)
