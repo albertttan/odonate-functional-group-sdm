@@ -93,14 +93,11 @@ response_analysis <- function(data, response_var, unit) {
     emmeans_genus <- emmeans_exp(as.data.frame(emmeans(model, ~ genus)))
     emmeans_genus
     
-    plot_genus <- ggplot(emmeans_genus, 
-                         aes(x = genus, y = emmean)) +
-        geom_point() +
+    plot_genus <- ggplot(emmeans_genus, aes(x = genus, y = emmean)) +
+        geom_point() + theme_minimal() + coord_flip() +
         geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0.2) +
-        theme_minimal() +
-        coord_flip() +
         labs(x = "Genus", y = paste0(str_to_title(response_str), " Change (", unit, ")")) +
-        theme(axis.text.y = element_text(face = "italic"))
+        theme(axis.text.y = element_text(face = "italic")) + switch(unit, "%" = ylim(90, 140), ylim(0, 500))
     ggsave(paste0("output/analysis/images/", response_str, "_genus.png"), plot_genus, dpi = 500)
     
     
@@ -109,28 +106,13 @@ response_analysis <- function(data, response_var, unit) {
     emmeans_genus_ssp <- emmeans_exp(as.data.frame(emmeans(model, ~ genus + ssp)))
     emmeans_genus_ssp
     
-    plot_ssp <- ggplot(emmeans_genus_ssp, 
-                       aes(x = genus, y = emmean, color = str_to_upper(ssp), group = ssp)) +
-        geom_point() +
-        theme_minimal() +
-        coord_flip() +
+    plot_ssp <- ggplot(emmeans_genus_ssp, aes(x = genus, y = emmean, color = str_to_upper(ssp), group = ssp)) +
+        geom_point() + theme_minimal() + coord_flip() +
         labs(x = "Genus", y = paste0(str_to_title(response_str), " Change (", unit, ")"), color = "SSP") +
-        theme(axis.text.y = element_text(face = "italic")) +
+        theme(axis.text.y = element_text(face = "italic")) + switch(unit, "%" = ylim(80, 160), ylim(0, 500)) +
         scale_color_brewer(palette = "Set2")
     ggsave(paste0("output/analysis/images/", response_str, "_ssp.png"), plot_ssp, dpi = 500)
-    
-    
-    ## Heatmap visualization
-    
-    plot_heatmap <- ggplot(emmeans_genus_ssp, 
-                           aes(x = str_to_upper(ssp), y = genus, fill = emmean)) +
-        geom_tile() +
-        scale_fill_gradient(low = "white", high = "steelblue") +
-        theme_minimal() +
-        labs(x = "SSP Scenario", y = "Genus", fill = paste0(str_to_title(response_str), "\nChange (", unit, ")")) +
-        theme(axis.text.y = element_text(face = "italic"))
-    ggsave(paste0("output/analysis/images/", response_str, "_heatmap.png"), plot_heatmap, dpi = 500)
-    
+
     
     ## Return everything useful
     
@@ -143,8 +125,7 @@ response_analysis <- function(data, response_var, unit) {
         emmeans_genus_ssp = emmeans_genus_ssp,
         plots = list(
             genus = plot_genus,
-            ssp = plot_ssp,
-            heatmap = plot_heatmap
+            ssp = plot_ssp
         )
     ))
 }
