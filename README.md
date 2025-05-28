@@ -1,6 +1,7 @@
 # Forecasting divergence: Climate-driven habitat shifts in North American Odonates depend on functional groups
 
 Author: Yunchao Tan
+
 Code by Yunchao Tan
 
 This repository contains all data, scripts, and documentation necessary to reproduce the analyses and figures presented in our manuscript. Upon acceptance, this README will be updated with the manuscript DOI.
@@ -17,7 +18,7 @@ This repository contains all data, scripts, and documentation necessary to repro
 
 ## Project Overview
 
-My study predicts the impacts of different climate change scenarios on the future habitat and distribution of Odonates. I used MaxEnt to construct species distribution models (SDMs) for 30 North American Odonate species across seven functional groups. Each model was applied to three future years and three different Shared Socio-economic Pathways (SSPs). My results show that Odonates will experience increasing overall habitat suitability and increasing range size with shifts northward; however, the total suitable habitat will shrink into smaller, geographically separated pockets. While most functional groups will follow the aforementioned trends, \textit{Libellula} will experience a decrease in range size, and \textit{Aeshna} will move the furthest north while experiencing the greatest increase in overall habitat suitability and range size. Overall, SSP5 will result in increased variability among functional groups in their habitat and distribution.
+My study predicts the impacts of different climate change scenarios on the future habitat and distribution of Odonates. I used MaxEnt to construct species distribution models (SDMs) for 30 North American Odonate species across seven functional groups. Each model was applied to three future years and three different Shared Socio-economic Pathways (SSPs). My results show that Odonates will experience increasing overall habitat suitability and increasing range size with shifts northward; however, the total suitable habitat will shrink into smaller, geographically separated pockets. While most functional groups will follow the aforementioned trends, *Libellula* will experience a decrease in range size, and *Aeshna* will move the furthest north while experiencing the greatest increase in overall habitat suitability and range size. Overall, SSP5 will result in increased variability among functional groups in their habitat and distribution.
 
 
 ## Data
@@ -43,9 +44,10 @@ All analysis scripts are contained within the main directory.
 - `cleaning.py`: Clean the presence-only entries data to select the relevant rows and columns.
 - `background.R`: Test different background points numbers to balance performance and prediction accuracy
 - `multicollinearity.R`: Select variables to ensure low multicollinearity
-- `model.R`: Execute initial and final species distribution models
+- `model_initial.R`: Execute initial variable screening models
+- `model_final.R`: Execute final species distribution models
 - `analysis.R`: Data analysis on outputs from species distribution models
-- `functions.R`: Underlying functions referenced by in `background.R`, `multicollinearity.R`, and `model.R`
+- `functions.R`: Underlying functions referenced by in `background.R`, `multicollinearity.R`, `model_initial.R`, and `model_final.R`
 
 
 ## Dependencies
