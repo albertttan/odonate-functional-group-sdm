@@ -27,7 +27,7 @@ All data is contained within the `Data` folder. After the original data is retri
 
 ### Odonates Presence Data
 
-- `presence.csv`: Presence-only entries of North American Odonates recorded between 2015--2025 ([Source](https://doi.org/10.15468/dl.rj2qh2))
+- `presence.csv`: Presence-only entries of North American Odonates recorded between 2015–2025 ([Source](https://doi.org/10.15468/dl.rj2qh2))
 
 ### Environmental Variables
 
@@ -47,7 +47,7 @@ All analysis scripts are contained within the main directory.
 - `model_initial.R`: Execute initial variable screening models
 - `model_final.R`: Execute final species distribution models
 - `analysis.R`: Data analysis on outputs from species distribution models
-- `functions.R`: Underlying functions referenced by in `background.R`, `multicollinearity.R`, `model_initial.R`, and `model_final.R`
+- `functions.R`: Underlying functions referenced by `background.R`, `multicollinearity.R`, `model_initial.R`, and `model_final.R`
 
 
 ## Dependencies
@@ -68,8 +68,8 @@ The analyses were conducted in Python (3.13.3) and R (version 4.4.3).
 
 ### Spatial Analysis and Modeling
 - `usdm` (R, version 2.1.7): Uncertainty analysis for species distribution models
-- `terra` (R, version 1.8.5): Spatial data analysis
 - `dismo` (R, version 1.3.16): Species distribution modeling
+- `terra` (R, version 1.8.5): Spatial data analysis
 - `predicts` (R, version 0.1.17): Spatial distribution prediction
 - `geosphere` (R, version 1.5.20): Spherical trignometry
 
