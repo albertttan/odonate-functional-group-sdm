@@ -12,8 +12,8 @@ initial_run = FALSE
 selected_bioclim_vars <- c(1, 4, 7, 10, 11, 12)
 selected_landuse_vars <- c(2:3, 5:19)
 selected_species_index <- c(1)
-selected_years <- c("2050")
-selected_ssps <- c("ssp1")
+selected_years <- c("2050", "2075", "2100")
+selected_ssps <- c("ssp1", "ssp2", "ssp5")
 
 
 ## Load data from files
