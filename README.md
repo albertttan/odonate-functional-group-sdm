@@ -34,14 +34,14 @@ All data is contained within the `Data` folder. After the original data is retri
 - `climate/`: Future predictions of 19 bioclimatic variables under the HadGEM3-GC31-LL model ([Source](https://www.worldclim.org/data/cmip6/cmip6_clim2.5m.html))
 - `landuse/`: Future predictions of land use (plant functional types) under the HadGEM2-ES model ([Source](https://doi.org/10.1038/s41597-020-00669-x))
 - `population/`: Future predictions of human population density ([Source](https://doi.org/10.1073/pnas.2002557117))
-- `topography/`: Terrain slope and roughness raster data
+- `topography/`: Terrain slope and roughness raster data ([Source](https://www.earthenv.org/topography))
 
 
 ## Scripts
 
 All analysis scripts are contained within the main directory.
 
-- `cleaning.py`: Clean the presence-only entries data to select the relevant rows and columns.
+- `cleaning.py`: Clean the presence-only entries data to select the relevant rows and columns
 - `background.R`: Test different background points numbers to balance performance and prediction accuracy
 - `multicollinearity.R`: Select variables to ensure low multicollinearity
 - `model_initial.R`: Execute initial variable screening models
