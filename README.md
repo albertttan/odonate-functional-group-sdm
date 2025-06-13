@@ -4,7 +4,7 @@ Author: Yunchao Tan
 
 Code by Yunchao Tan
 
-This repository contains all data, scripts, and documentation necessary to reproduce the analyses and figures presented in our manuscript. Upon acceptance, this README will be updated with the manuscript DOI.
+This repository contains all data, scripts, and documentation necessary to reproduce the analyses and figures presented in our manuscript. The manuscript has been submitted to PeerJ. Upon acceptance, this README will be updated with the manuscript DOI.
 
 
 ## Table of Contents
@@ -18,7 +18,7 @@ This repository contains all data, scripts, and documentation necessary to repro
 
 ## Project Overview
 
-My study predicts the impacts of different climate change scenarios on the future habitat and distribution of Odonates. I used MaxEnt to construct species distribution models (SDMs) for 30 North American Odonate species across seven functional groups. Each model was applied to three future years and three different Shared Socio-economic Pathways (SSPs). My results show that Odonates will experience increasing overall habitat suitability and increasing range size with shifts northward; however, the total suitable habitat will shrink into smaller, geographically separated pockets. While most functional groups will follow the aforementioned trends, *Libellula* will experience a decrease in range size, and *Aeshna* will move the furthest north while experiencing the greatest increase in overall habitat suitability and range size. Overall, SSP5 will result in increased variability among functional groups in their habitat and distribution.
+My study predicts the impacts of different climate change scenarios on the future habitat and distribution of Odonates. I retrieved data from Odonata Central, WorldClim, EarthEnv, and other published data. I used MaxEnt to construct species distribution models (SDMs) for 30 North American Odonate species across seven functional groups. Each model was applied to three future years and three different Shared Socio-economic Pathways (SSPs).
 
 
 ## Data
@@ -27,19 +27,19 @@ All data is contained within the `Data` folder. After the original data is retri
 
 ### Odonates Presence Data
 
-- `presence.csv`: Presence-only entries of North American Odonates recorded between 2015–2025 ([Source](https://doi.org/10.15468/dl.rj2qh2))
+- `presence.csv`: Presence-only entries of North American Odonates recorded between 2015–2025 (Source: [GBIF](https://doi.org/10.15468/dl.rj2qh2))
 
 ### Environmental Variables
 
-- `climate/`: Future predictions of 19 bioclimatic variables under the HadGEM3-GC31-LL model ([Source](https://www.worldclim.org/data/cmip6/cmip6_clim2.5m.html))
-- `landuse/`: Future predictions of land use (plant functional types) under the HadGEM2-ES model ([Source](https://doi.org/10.1038/s41597-020-00669-x))
-- `population/`: Future predictions of human population density ([Source](https://doi.org/10.1073/pnas.2002557117))
-- `topography/`: Terrain slope and roughness raster data ([Source](https://www.earthenv.org/topography))
+- `climate/`: Future predictions of 19 bioclimatic variables under the HadGEM3-GC31-LL model ([WorldClim](https://www.worldclim.org/data/cmip6/cmip6_clim2.5m.html))
+- `landuse/`: Future predictions of land use (plant functional types) under the HadGEM2-ES model ([Chen et al.](https://doi.org/10.1038/s41597-020-00669-x))
+- `population/`: Future predictions of human population density ([Wang et al.](https://doi.org/10.1038/s41597-022-01675-x))
+- `topography/`: Terrain slope and roughness raster data ([EarthEnv](https://www.earthenv.org/topography))
 
 
 ## Scripts
 
-All analysis scripts are contained within the main directory.
+All analysis scripts are contained within the main directory. Please execute shell script `workflow` to run the scripts in order.
 
 - `cleaning.py`: Clean the presence-only entries data to select the relevant rows and columns
 - `background.R`: Test different background points numbers to balance performance and prediction accuracy
