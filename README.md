@@ -1,10 +1,9 @@
 # Forecasting divergence: Climate-driven habitat shifts in North American Odonates depend on functional groups
 
-Author: Yunchao Tan
-
+Author: Yunchao Tan  
 Code by Yunchao Tan
 
-This repository contains all data, scripts, and documentation necessary to reproduce the analyses and figures presented in our manuscript. The manuscript has been submitted to PeerJ. Upon acceptance, this README will be updated with the manuscript DOI.
+This repository contains all data, scripts, and documentation necessary to reproduce the analyses and figures presented in my manuscript. The manuscript has been submitted to *Conservation*.
 
 
 ## Table of Contents
